@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <link rel="stylesheet" href="css/magnific-popup.css">
+ <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ 
+
+  <div class="parent-container">
+    <a href="images/image_1.jpg"><img src="images/image_1.jpg" alt=""></a>
+    <a href="images/image_2.jpg"><img src="images/image_2.jpg" alt=""></a>
+    <a href="images/image_3.jpg"><img src="images/image_3.jpg" alt=""></a>
+    <a href="images/image_4.jpg"><img src="images/image_4.jpg" alt=""></a>
+  </div>
+
+
+ <script src="js/jquery-3.6.0.min.js"></script>
+ <script src="js/jquery.magnific-popup.min.js"></script>
+ <script>
+    $('.parent-container').magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{enabled:true},
+      zoom: {
+    enabled: true,
+    duration: 500,
+    easing: 'ease-in-out',
+  }
+      
+    });
+ </script>
+</body>
+</html>
